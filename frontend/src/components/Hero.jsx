@@ -6,6 +6,8 @@ const highlights = [
   { value: "100%", label: "Responsive" }
 ];
 
+const assetPath = `${import.meta.env.BASE_URL}chandana-profile.png`;
+
 export default function Hero() {
   return (
     <section id="home" className="section relative overflow-hidden pt-32 sm:pt-36">
@@ -58,7 +60,7 @@ export default function Hero() {
           </div>
           <div className="relative mx-auto aspect-square w-64 overflow-hidden rounded-full border-4 border-teal-300/70 bg-slate-100 shadow-2xl shadow-teal-900/15 sm:w-72 dark:bg-slate-900">
             <img
-              src="/chandana-profile.png"
+              src={assetPath}
               alt="Chandana profile photo"
               className="h-full w-full object-cover object-[50%_28%]"
             />

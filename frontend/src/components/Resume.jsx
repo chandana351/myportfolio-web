@@ -1,5 +1,7 @@
 import { Download } from "lucide-react";
 
+const resumePath = `${import.meta.env.BASE_URL}resume.pdf`;
+
 export default function Resume() {
   return (
     <section id="resume" className="section">
@@ -12,7 +14,7 @@ export default function Resume() {
               Download my updated resume with my frontend, full-stack, project and technical skill details.
             </p>
           </div>
-          <a href="/resume.pdf" download="Chandana_Resume.pdf" className="primary-button">
+          <a href={resumePath} download="Chandana_Resume.pdf" className="primary-button">
             <Download size={18} /> Download Resume
           </a>
         </div>
