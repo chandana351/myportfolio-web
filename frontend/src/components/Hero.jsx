@@ -1,9 +1,16 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Braces, Database, Github, Layers3, Linkedin, Mail, Server } from "lucide-react";
 
 const highlights = [
   { value: "6+", label: "Projects" },
   { value: "9", label: "Skills" },
   { value: "100%", label: "Responsive" }
+];
+
+const stackFlow = [
+  { label: "UI", detail: "React", icon: Layers3 },
+  { label: "Logic", detail: "JavaScript", icon: Braces },
+  { label: "API", detail: "Express", icon: Server },
+  { label: "Data", detail: "Firebase", icon: Database }
 ];
 
 const assetPath = `${import.meta.env.BASE_URL}chandana-profile.png`;
@@ -19,13 +26,27 @@ export default function Hero() {
             Hi, I am Chandana.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            A fresher developer building responsive, accessible and modern web applications with React,
-            JavaScript, Tailwind CSS and Node.js.
+            A fresher developer building responsive frontends, clean UI components and full-stack
+            project flows with React, JavaScript, Tailwind CSS, Node.js and Express.
           </p>
 
-          <div className="mt-7 grid max-w-xl grid-cols-3 gap-3">
+          <div className="mt-7 grid max-w-2xl gap-3 sm:grid-cols-4">
+            {stackFlow.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <div key={item.label} className="glass-card glass-shine rounded-xl px-4 py-3">
+                  <Icon className="text-teal-600 dark:text-teal-300" size={20} aria-hidden="true" />
+                  <p className="mt-3 text-xs font-bold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">{item.label}</p>
+                  <p className="mt-1 font-extrabold text-slate-950 dark:text-white">{item.detail}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-5 grid max-w-xl grid-cols-3 gap-3">
             {highlights.map((item) => (
-              <div key={item.label} className="glass-card rounded-xl px-4 py-3 text-center">
+              <div key={item.label} className="glass-card glass-shine rounded-xl px-4 py-3 text-center">
                 <strong className="block text-2xl font-extrabold text-slate-950 dark:text-white">{item.value}</strong>
                 <span className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">{item.label}</span>
               </div>
@@ -42,10 +63,10 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex gap-3">
-            <a className="secondary-button !px-3" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+            <a className="secondary-button !px-3" href="https://github.com/chandana351" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
               <Github size={18} />
             </a>
-            <a className="secondary-button !px-3" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <a className="secondary-button !px-3" href="https://www.linkedin.com/in/sr-chandhana-7b6917383/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
               <Linkedin size={18} />
             </a>
           </div>

@@ -9,7 +9,7 @@ const recruiterPoints = [
   {
     icon: Briefcase,
     title: "Project Practice",
-    text: "Has deployed portfolio projects with GitHub links and live demos recruiters can review quickly."
+    text: "Ships deployed projects with GitHub links, live demos and clear problem-focused descriptions."
   },
   {
     icon: GraduationCap,
@@ -26,7 +26,7 @@ export default function About() {
           <p className="section-kicker">About Me</p>
           <h2 className="section-title">Ready to grow with the right team.</h2>
         </div>
-        <div className="glass-card rounded-2xl p-6 sm:p-8">
+        <div className="glass-card glass-shine rounded-2xl p-6 sm:p-8">
           <p className="leading-8 text-slate-600 dark:text-slate-300">
             I am Chandana, a fresher Frontend and Full Stack Developer focused on creating clean,
             user-friendly and responsive web applications. I enjoy turning ideas into practical interfaces,
@@ -35,8 +35,8 @@ export default function About() {
           </p>
           <p className="mt-5 leading-8 text-slate-600 dark:text-slate-300">
             My current skill set includes React, JavaScript, Tailwind CSS, Bootstrap, Git, GitHub, Firebase
-            basics and Node.js with Express. I am looking for an entry-level opportunity where I can contribute,
-            learn from experienced developers and keep building real-world products.
+            basics and Node.js with Express. I can build interfaces, connect contact forms to backend APIs,
+            deploy projects and keep improving with feedback from experienced developers.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {recruiterPoints.map((point) => {
