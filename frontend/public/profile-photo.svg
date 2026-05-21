@@ -1,0 +1,10 @@
+<svg width="900" height="1125" viewBox="0 0 900 1125" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1125" fill="#0F172A"/>
+  <rect x="60" y="60" width="780" height="1005" rx="44" fill="#111827" stroke="#14B8A6" stroke-width="4"/>
+  <circle cx="450" cy="348" r="150" fill="#CCFBF1"/>
+  <path d="M252 882C271 738 350 642 450 642C550 642 629 738 648 882H252Z" fill="#14B8A6"/>
+  <path d="M315 340C315 257 371 204 450 204C529 204 585 257 585 340C585 379 571 414 548 439C527 463 493 481 450 481C407 481 373 463 352 439C329 414 315 379 315 340Z" fill="#F8FAFC"/>
+  <path d="M314 318C325 236 377 188 450 188C522 188 575 236 586 318C545 295 500 284 450 284C400 284 355 295 314 318Z" fill="#334155"/>
+  <text x="450" y="984" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">Chandana</text>
+  <text x="450" y="1044" text-anchor="middle" fill="#5EEAD4" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Replace with your real photo</text>
+</svg>

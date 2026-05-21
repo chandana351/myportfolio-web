@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+::selection {
+  background: #14b8a6;
+  color: #ffffff;
+}
+
+@layer components {
+  .section {
+    @apply scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-normal text-slate-950 sm:text-4xl dark:text-white;
+  }
+
+  .section-kicker {
+    @apply mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-teal-600 dark:text-teal-300;
+  }
+
+  .glass-card {
+    @apply border border-white/60 bg-white/75 shadow-xl shadow-slate-200/70 backdrop-blur-xl transition-all duration-300 dark:border-white/10 dark:bg-white/10 dark:shadow-black/20;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-teal-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 transition hover:-translate-y-0.5 hover:bg-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/30;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:border-teal-400 hover:text-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-500/20 dark:border-white/15 dark:bg-white/10 dark:text-white dark:hover:border-teal-300 dark:hover:text-teal-200;
+  }
+
+  .skill-card {
+    animation: float-in 0.65s ease both;
+  }
+
+  .floating-card {
+    animation: soft-float 6s ease-in-out infinite;
+  }
+
+  .floating-panel {
+    animation: soft-rise 0.75s ease both;
+  }
+
+  .floating-badge {
+    animation: badge-float 4.5s ease-in-out infinite;
+  }
+
+  .floating-delay {
+    animation-delay: 1.2s;
+  }
+
+  .project-card {
+    animation: float-in 0.7s ease both;
+    transform: translateY(0);
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.15);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes badge-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes soft-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card,
+  .floating-card,
+  .floating-panel,
+  .floating-badge,
+  .project-card {
+    animation: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+}

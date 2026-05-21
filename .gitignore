@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+.DS_Store
+resume_rendered
+resume_pdf_preview
+*.log

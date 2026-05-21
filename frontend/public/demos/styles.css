@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #020617;
+  color: #f8fafc;
+  font-family: Inter, Arial, sans-serif;
+}
+
+main {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.back {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: #5eead4;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 76vh;
+  display: grid;
+  align-content: end;
+  gap: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  padding: clamp(28px, 7vw, 72px);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 30px 90px rgba(15, 23, 42, 0.45);
+}
+
+.hero p {
+  margin: 0;
+  color: #5eead4;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(42px, 8vw, 86px);
+  line-height: 1;
+}
+
+.hero span {
+  max-width: 680px;
+  color: #dbeafe;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.6;
+}
+
+.grocery {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.52), rgba(20, 184, 166, 0.30)), url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80");
+}
+
+.pizza {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.54), rgba(220, 38, 38, 0.32)), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80");
+}
+
+.movie {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.58), rgba(59, 130, 246, 0.30)), url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+}
+
+.student {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.58), rgba(79, 70, 229, 0.32)), url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80");
+}
+
+.todo {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.56), rgba(20, 184, 166, 0.26)), url("https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1600&q=80");
+}
+
+.calculator {
+  background-image: linear-gradient(135deg, rgba(2, 6, 23, 0.56), rgba(15, 23, 42, 0.36)), url("https://images.unsplash.com/photo-1616427592793-67b858804534?auto=format&fit=crop&w=1600&q=80");
+}
