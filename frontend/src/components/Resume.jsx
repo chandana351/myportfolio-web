@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 
-const resumePath = `${import.meta.env.BASE_URL}resume.pdf`;
+const resumePath = `${import.meta.env.BASE_URL}CHANDANA-RESUME.pdf`;
 
 export default function Resume() {
   return (
