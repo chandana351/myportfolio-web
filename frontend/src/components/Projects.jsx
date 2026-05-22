@@ -47,7 +47,7 @@ const projects = [
     tech: ["JavaScript", "React"],
     github: "https://github.com/chandana351/basic-calculator",
     demo: "https://chandana351.github.io/basic-calculator/",
-    image: "https://images.unsplash.com/photo-1611705402139-ec8bfe063507?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
